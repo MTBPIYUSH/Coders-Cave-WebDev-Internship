@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto; /* Ensure scrolling is possible */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#location {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+
+#loading {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#current-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+#forecast-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.forecast-item:hover {
+    transform: translateY(-5px);
+}
+
+.forecast-icon img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.powered-by {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.powered-by img {
+    width: 100px;
+    vertical-align: middle;
+}
